@@ -1,2 +1,9 @@
 <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
+<StackLayout>
+    <Label text="Register and read proximity sensor for Android only. iOS will come later" textWrap="true"></Label>
+    <Label text="Proximity:  {{proximityValue}}"></Label>
+
+    <Button text="Register listener" (tap)="registerProximityListener()"></Button>
+    <Button text="unRegister listener" (tap)="unRegisterProximityListener()"></Button>
+    <Button text="log value" (tap)="logProximityValue()"></Button>
+</StackLayout>
